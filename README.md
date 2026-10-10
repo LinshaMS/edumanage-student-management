@@ -6,9 +6,13 @@ A full-stack web application for managing students, courses, and enrolments thro
 
 EduManage provides a centralized interface for administrators to manage student records and courses, view dashboard statistics, and maintain account settings.
 
+## Application Screenshot
+
+![EduManage Admin Dashboard](screenshots/dashboard.png)
+
 ## Features
 
-- **Admin Authentication** — Secure login with JWT-based authentication.
+- **Admin Authentication** — Administrator login with JWT-based authentication.
 - **Dashboard** — Overview of student counts, courses, and enrolment statistics.
 - **Student Management** — Add, view, edit, and delete student records.
 - **Search and Filtering** — Find students by name or email and filter by course.
@@ -32,6 +36,9 @@ EduManage provides a centralized interface for administrators to manage student 
 ```text
 fullstack/
 ├── .gitignore
+├── README.md
+├── screenshots/
+│   └── dashboard.png
 └── backend/
     ├── config/
     ├── controller/
@@ -59,45 +66,45 @@ fullstack/
 - MongoDB, either local or MongoDB Atlas
 - Git
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/LinshaMS/edumanage-student-management.git
 cd edumanage-student-management
 ```
 
-### 2. Configure the backend
+### 2. Configure the Backend
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file in the backend directory using the environment variables required by the backend configuration.
+Create a `.env` file in the `backend` directory with the environment variables required by the backend configuration.
 
-Keep database credentials, JWT secrets, and administrator credentials private. Never commit the real `.env` file.
+Keep database credentials, JWT secrets, and administrator credentials private. Never commit your real `.env` file.
 
-### 3. Start the backend
+### 3. Start the Backend
 
-From the `backend` directory, run the development command configured in `package.json`. The current development setup uses:
+From the `backend` directory, run:
 
 ```bash
 npx tsx server.ts
 ```
 
-The backend runs on port `5000` by default.
+The backend uses port `5000` by default.
 
-### 4. Start the frontend
+### 4. Start the Frontend
 
-Open a second terminal:
+Open a **second terminal** from the repository root and run:
 
 ```bash
-cd "backend/Frontend"
+cd backend/Frontend
 npm install
 npm run dev
 ```
 
-Open the local URL displayed by Vite in the terminal.
+Open the local URL displayed by Vite in your terminal.
 
 ## Security Notes
 
@@ -118,6 +125,8 @@ Open the local URL displayed by Vite in the terminal.
 **Linsha Mary Sabu**
 
 Computer Science and Engineering graduate interested in full-stack development.
+
+**GitHub:** [LinshaMS](https://github.com/LinshaMS)
 
 ## License
 
